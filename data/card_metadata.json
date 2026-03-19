@@ -1,7 +1,7 @@
 {
   "name": "High-Low Card Deck",
   "cards": [
-    {"value": 1, "name": "Ace (Low)"},
+    {"value": 1, "name": "Ace"},
     {"value": 2, "name": "Two"},
     {"value": 3, "name": "Three"},
     {"value": 4, "name": "Four"},
@@ -11,7 +11,9 @@
     {"value": 8, "name": "Eight"},
     {"value": 9, "name": "Nine"},
     {"value": 10, "name": "Ten"},
-    {"value": 11, "name": "Ace (High)"}
+    {"value": 11, "name": "Jack"},
+    {"value": 12, "name": "Queen"},
+    {"value": 13, "name": "King"}
   ],
   "description": "Stylized dataset representing the card values used in the High-Low minigame."
 }
