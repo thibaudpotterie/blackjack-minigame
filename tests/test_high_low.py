@@ -1,3 +1,5 @@
+"""Unit tests for the High-Low Blackjack minigame."""
+
 from unittest.mock import patch
 from high_low import get_card, play_turn
 
@@ -11,7 +13,7 @@ def test_get_card():
 
 @patch("high_low.input", return_value="h")
 @patch("high_low.get_card", return_value=10)
-def test_play_turn_win_higher(mock_get_card, mock_input):
+def test_play_turn_win_higher(_mock_get_card, _mock_input):
     """Verify play_turn logic for a correct 'higher' guess."""
     won, next_card = play_turn(5)
     assert won is True
@@ -20,7 +22,7 @@ def test_play_turn_win_higher(mock_get_card, mock_input):
 
 @patch("high_low.input", return_value="l")
 @patch("high_low.get_card", return_value=2)
-def test_play_turn_win_lower(mock_get_card, mock_input):
+def test_play_turn_win_lower(_mock_get_card, _mock_input):
     """Verify play_turn logic for a correct 'lower' guess."""
     won, next_card = play_turn(5)
     assert won is True
@@ -29,7 +31,7 @@ def test_play_turn_win_lower(mock_get_card, mock_input):
 
 @patch("high_low.input", return_value="h")
 @patch("high_low.get_card", return_value=3)
-def test_play_turn_lose_higher(mock_get_card, mock_input):
+def test_play_turn_lose_higher(_mock_get_card, _mock_input):
     """Verify play_turn logic for an incorrect 'higher' guess."""
     won, next_card = play_turn(5)
     assert won is False
@@ -38,7 +40,7 @@ def test_play_turn_lose_higher(mock_get_card, mock_input):
 
 @patch("high_low.input", return_value="l")
 @patch("high_low.get_card", return_value=8)
-def test_play_turn_lose_lower(mock_get_card, mock_input):
+def test_play_turn_lose_lower(_mock_get_card, _mock_input):
     """Verify play_turn logic for an incorrect 'lower' guess."""
     won, next_card = play_turn(5)
     assert won is False
