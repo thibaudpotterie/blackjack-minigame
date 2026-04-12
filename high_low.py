@@ -45,7 +45,7 @@ def play_turn(current_card: int) -> tuple[bool, int]:
 
 def main() -> None:
     """Main game loop for the Higher or Lower Blackjack-style game."""
-    print("Welcome to Higher or Lower Blackjack!")
+        print( "Welcome to Higher or Lower Blackjack!" )
     print("Cards from Ace to King will be displayed and you have to guess if "
           "the next card is higher or lower.")
     print("If you guess correctly, you get a point. Good luck!")
