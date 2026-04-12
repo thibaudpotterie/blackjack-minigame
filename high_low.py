@@ -1,6 +1,7 @@
 import random
 import json
 import pathlib
+import os
 
 
 def get_cards() -> dict[int, str]:
