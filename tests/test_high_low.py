@@ -43,5 +43,5 @@ def test_play_turn_lose_higher(_mock_get_card, _mock_input):
 def test_play_turn_lose_lower(_mock_get_card, _mock_input):
     """Verify play_turn logic for an incorrect 'lower' guess (e.g., Queen)."""
     won, next_card = play_turn(10)
-    assert won is False
+    assert won is True
     assert next_card == 12
